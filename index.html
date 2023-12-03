@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEL0lEQVR4AWIgFsjdSeKRu51kKXcL0Hs5ANmxhFH4xbY1q2fbtm3PnWe/mIXYtm3bto21Ylur71QmqcndmTWqTt3p7t/qXvN/Y585DCzle7Ogb+3x/Z8RZj4h2gwLzoDiygi2UDDX2PvjEWPPjwkg2QMJ0ByGdjY8JgZXyrLigHBfEYR8auw11yD0qhRkElfhXYWMjwMirMKZVV4JL7qg+KyEZQfIOIOsjgHhVoUMKYe4JpgEc6IE5BASkTkuIMxXPW3l5AzCiWLKFWAE0XWPhPKksEOYlBvKHZHoYERahVJ7H2p+lqGcZ78mTqPrI//QV6ZiV7sQXwAxWL0OzLB7vTe57AZPD9YDwQSwBP7d0B7NSMdAuwL+ik7vLScj37vZawxehTCYWVDGiLIK14z7KZ9/5GpF/1zQiLCKQ1MF2gcUSQxqB5Yj56RXi0L3wzXlEb6SEM9xes3he9kfYFYpI9T3FLLb4vG+VF1FRCnIEoQfIqaXw4CLGh62cUU5D2T9LPgCpj/5bUgKmrHfmPX/rH9E0VvyHqWVjYifCjoNCYr5NR/0QdC2QPYJh56D8Dym8P/vP145DIOhL5iN9ZEqTpDoUVRJ4BIg/+YOtRoy/7ENKnKjyw7+np/9Xg6+BNZ/3aLCykDlJthGHAax8ETzGyel4LzL0Eqy74TxKHmHFi8WEGYVYT3EScfZQBmw1EPpSV1AELUAX+GR0nA3CCKkAZyFsHc/4X+ZPVPjFiwiCoedBslwu4Mmsz7nVwcLlILNbrcah38HRGbuEsGgEjJKabW74GI6k3GdlwFXOPw+IPrnQnhbC5oXwI+gIULb4GV70EKKwBcofQK6KgGRPxVwGFMWGV9At1IR8TbAOwXxnM1HQCjfCl1SGvVxCrqd0A/HoG9QXqNWlJVPhgSEmTU5X+thwAIZMDTDc5yQgjNSCE5rnco7BprdDWrXmhhTnb1VbjIxdoBS8J/HKyfR9moENE3Bt+A1Jt5TPLse5fdJCvA19r4HLaGbpag5DEoQP9ikyecSOU3DP8kVgmgZF4K9nN12PafVQ335uMWKUJillV/Gb+larKtEmvnsyVcIw+7QDNArSnWUTmsfxIFHuYapXAaOC8EhhP0kzzVOwTiwDGwC28Bmez0aNEHYq0SlnIzBkAoaMpKRRgdMh7749cvI9AoTSMjgNXseoRsCQs16yj0dUUT970F7BZ3f3fwSol1y6tGBrK0oH4Wi4x7eL8PICv4Pko9V4XnwIDmFrve9nmQd8+BJ1pYCLuT1T0gFFVuuGUBaeAOUT3Oe6+ksI3LhWT4aB6tm9B8TRaJDjtQEE1NhT89z95oINT+0u+NK5hXDoxuRgsNzcp7FPwZMRY1bhM3UYHHOBY+5cVBDRgPMbrWc+UNYCYx5TBMO6Dm+EKwH68ACMECznZnyqCZcRuWmAMFguk4gWsrvAAAAAElFTkSuQmCC">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+          <img id="logo" src="./assets/Spotify logo.svg" />
+          <ul>
+            <li><img src="assets/fi-ss-home.svg" alt="home"> <a href="./index2.html">Home</a></li>
+            <li><img src="assets/fi-rs-search.svg" alt="search"> <a href="#">Search</a></li>
+            <li><img src="assets/library.svg" alt="your library"> <a href="#">Your library</a></li>
+            <li id="create"><img src="assets/fi-ss-plus-small.svg" alt="add"> <a href="#">Create Playlist</a></li>
+            <li id="liked"><img src="assets/fi-ss-heart.svg" alt="heart"><a href="#">Liked Songs</a></li>
+            <li id="episode"><img src="assets/Group.svg" alt="roam"> <a href="#">Your Episodes</a></li>
+          </ul>
+          <ul id="fav">  
+            <li id="first">FAV</li>
+            <li>Daily Mix1</li>
+            <li>Discover Weekly</li>
+            <li>Malayalam</li>
+            <li>Dance/Electronix mix</li>
+            <li>EDM/Popular</li>
+            <li id="install"><img src="assets/grommet-icons_install-option.svg" alt="install-icon"><a href="#">Install App</a></li>
+        </ul>
+        </div>
+        <div id="mainbar">
+            <div id="nav">
+                <img class="arrow" src="assets/fi-rr-angle-small-left.svg" alt="left">
+                <img class="arrow right" src="assets/fi-rr-angle-small-right.svg" alt="right">
+                <div id="acc">
+                    <img src="assets/Ellipse 3.svg" alt="angel">
+                    <p>Angel</p>
+                    <img src="assets/fi-ss-caret-down.svg" alt="down">
+                </div>
+            </div>
+            <div id="main">
+                <div><h4>Good morning</h4></div>
+                <div class="lists">
+                    <div class="card1"><img id="heart2" src="./assets/fi-ss-heart.svg">Liked Songs</div>
+                    <div class="card1"><img class="img2" src="assets/Rectangle 2.svg">Neffex Playlist</div>
+                    <div class="card1"><img class="img2" src="assets/img2.svg">K/ DA</div>
+                    <div class="card1"><img class="img2" src="assets/Dance.svg">Dance / Electronic Mix</div>
+                </div>
+            </div>
+            <div id="see" >
+                <h5>Shows You might like</h5>
+                    <a href="#">SEE ALL</a>
+            </div>
+            <div id="categories">
+                <div class="lists lists1">
+                    <div class="card2"><img class="img2" src="./assets/Rectangle 16.svg">Weekly Motivations<p>Ben Moona scott</p></div>
+                    <div class="card2"><img class="img2" src="assets/Rectangle 161.svg">MEDITATION SELF<p>ibn hussain aleen</p></div>
+                    <div class="card2"><img class="img2" src="assets/Rectangle 162.svg">Words Beyond Action<p>Sameul scott</p></div>
+                    <div class="card2"><img class="img2" src="assets/Rectangle 163.svg">The Alex Show<p>Adriana Tom</p></div>
+                    <div class="card2"><img class="img2" src="./assets/Rectangle 163.svg">The Alex Show<p>Adriana Tom</p></div>
+                    <div class="card2"><img class="img2" src="assets/Rectangle 163.svg">The Alex Show<p>Adriana Tom</p></div>
+                    <div class="card2"><img class="img2" src="assets/Rectangle 163.svg">The Alex Show<p>Adriana Tom</p></div>
+                    <div class="card2"><img class="img2" src="assets/Rectangle 163.svg">The Alex Show<p>Adriana Tom</p></div>
+                </div>
+            </div>
+        
+        </div>
+        <div id="player">
+            <div id="song">
+                <img src="assets/Rectangle 20.svg" alt="song">
+                <div id="song-name">
+                    <h5>Dreaming On</h5>
+                    <p>NEFFEX</p>
+                </div>
+                <img src="assets/bx_bxs-heart.svg">
+            </div>
+            <div id="tools">
+                <div id="playtools">
+                    <img src="assets/raphael_shuffle.svg">
+                    <img src="assets/bx_bx-skip-previous.svg">
+                    <img src="assets/gridicons_play.svg">
+                    <img src="assets/bx_bx-skip-previous (1).svg">
+                    <img src="assets/Group1.svg">
+                </div>
+                <div id="toggle">
+                    <p>2:11</p>
+                    <img id="a1" src="assets/Rectangle 18.svg">
+                    <img src="assets/Rectangle 19.svg">
+                    <p>2:42</p>
+                </div>
+            </div>
+            <div id="nav-tools">
+                    <img src="assets/ph_microphone-stage.svg">
+                    <img src="assets/carbon_query-queue.svg">
+                    <img src="assets/carbon_laptop.svg">
+                    <img src="assets/speaker.svg">
+                    <img id="bar"src="assets/Rectangle 18.svg">
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
