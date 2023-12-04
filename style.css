@@ -13,6 +13,7 @@
 #header{
     position:fixed;
     flex:1;
+
     background-color: #000;
 }
 
@@ -73,6 +74,7 @@ img{
 #mainbar {
     display:flex;
     flex-direction: column;
+    margin-left: 20%;
     flex:5;
     color:white;
         background: linear-gradient(
@@ -91,7 +93,6 @@ img{
   }
   #nav{
     display:flex;
-    width:1000px;
     padding:10px;
     gap:10px;
   }
